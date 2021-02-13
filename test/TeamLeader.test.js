@@ -1,15 +1,34 @@
-const { expect } = require('@jest/globals');
-const { describe } = require('yargs');
-const TeamLeader = require('../lib/engineer.js')
+const TeamLeader = require('../lib/teamleader.js')
 
 describe('Team Leader', () => {
 
     describe("Initialization", () => {
-        it("should return an object containing a 'role' property when called with the 'new' keyword", () => {
-          const obj = new TeamLeader();
+        it("should return an object containing an 'office' property when called with the 'new' keyword", () => {
+
+            const obj = new TeamLeader('employeeName', 'ID', 'email', 'photo', 'officenumber');
     
-          expect("role" in obj).toEqual(true);
+          expect("office" in obj).toEqual(true);
         });
       }); 
+
+      describe("Get Role", () => {
+        it("should return an object containing a 'role' property that equals 'Team Leader'", () => {
+
+            const obj = new TeamLeader('employeeName', 'ID', 'email', 'photo', 'office');
+            const role = obj.getRole();
+    
+          expect(role).toEqual('Team Leader');
+        });
+      });
+
+      describe("name", () => {
+        it("should return an object containing an 'employeeName' property that equals the first parameter", () => {
+
+            const obj = new TeamLeader('employeeName', 'ID', 'email', 'photo', 'office');
+            const name = obj.employeeName;
+    
+          expect(name).toEqual('employeeName');
+        });
+      });
       
 });

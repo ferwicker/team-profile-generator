@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "jest"
   },
   "author": "Fer Wicker",
   "license": "ISC",
