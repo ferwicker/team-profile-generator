@@ -4,6 +4,7 @@ const Employee = require('./lib/employee.js');
 const TeamLeader = require('./lib/teamleader.js');
 const Engineer = require('./lib/engineer.js');
 const Intern = require('./lib/intern.js');
+const generateHTML = require('./utils/generateHTML.js')
 
 const teamMembers = [];
 
@@ -112,7 +113,7 @@ function menu () {
                     console.log("Let's add an intern!");
                     addIntern();
                 } else {
-                    console.log(teamMembers);
+                    generateHTML(teamMembers);
                     console.log('Finished adding your team! See the generated HTML file in the folder.');
                 }
             });

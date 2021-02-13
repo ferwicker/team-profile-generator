@@ -21,6 +21,34 @@ h2 {
     font-weight: 500;
 }
 
+a {
+    color: #383838;
+    text-decoration: none;
+}
+
+.team-leader a:hover {
+    color: #DD2D5C;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.engineer a:hover {
+    color: #3ADBCF;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.intern a:hover {
+    color: #4D5ABE;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+a:visited {
+    color: #383838;
+    text-decoration: underline;
+}
+
 .team-leader {
     border-color: #DD2D5C;
 }
@@ -38,14 +66,14 @@ h2 {
     border-style: solid;
     border-width: 4px;
     margin: 20px;
-    padding: 40px 0;
+    padding: 30px 0;
     width: 29%;
     min-width: 320px;
 }
 
 .team-photo {
     border-radius: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 200px;
 }
 
@@ -96,7 +124,7 @@ h2 {
 .email {
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .extra {
