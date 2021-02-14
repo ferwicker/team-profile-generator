@@ -14,7 +14,7 @@ function generateHTML (array) {
             extraInfo = `Office: ${array[i].office}` // this gets the 'extra' information for the card
         } else if (array[i].role === 'Engineer') {
             cardClass = 'engineer';
-            extraInfo = `Github: <a href="www.github.com/${array[i].github}" target="_blank">${array[i].github}</a>` //github user name and link
+            extraInfo = `Github: <a href="https://www.github.com/${array[i].github}" target="_blank">${array[i].github}</a>` //github user name and link
         } else {
             cardClass = 'intern';
             extraInfo = `School: ${array[i].school}` // this gets the 'extra' information for the card
